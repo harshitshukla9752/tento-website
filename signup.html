@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Tento</title>
+    
+    <style>
+        
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           background: url('background.jpeg');
+           background-size:cover;
+        }
+        *{box-sizing: border-box;}
+        .footer{
+            text-align:bottom ;
+            width:100%;
+            background-color: #565656;
+        }
+        .header-container {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            
+            width: 100%;
+            text-align: upperside;
+            
+            
+        }
+        
+       
+        .main-content {
+            padding: 20px;
+        }
+
+        
+        nav {
+            background-color: transparent;
+            background: url('header.png');
+            background-size:cover;
+            padding: 10px;
+            text-align: left;
+        }
+        nav a {
+            color: #050505;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            color: #2c2c2c;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            overflow: hidden;
+            animation: slideIn 1.0s ease-out;
+        }
+        @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+            
+            
+    
+        .header {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            margin-right: 10px;
+        }
+
+        .logo img {
+            position: absolute;
+            width: 60px; 
+            height: auto;
+            top: 70px;
+            right:200px;
+            color: #343a40;
+        }
+
+        .logo h1 {
+            position: absolute;
+            margin: 0;
+            top: 150px;
+            right: 100px;
+            font-size: 1.8em;
+            color: #343a40;
+        }
+        
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: url('footer.png');
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005bbb;
+        }
+
+        p {
+            color: #6c757d;
+            margin-top: 20px;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="header-container">
+
+    
+
+    
+    <nav><a href="home.php"  style="align-content: left;">Home</a>
+        <a href="aboutus.php" style="align-content: left;">About Us</a>
+        <a href="contactsupport.php" style="align-content: left;">Contact Support</a>
+        <a href="vendorsearch.php" style="align-content: left;">VendorSearch</a>
+        <h1>Tento <img src="logo.png" alt="Company Logo" style="width: 150px;height: 150px;align-content: center;margin-left: 570px;"></h1>
+    </nav>
+</div> 
+
+             <!-- Signup Form -->    
+    <div class="container"  style="align-content:center;margin-left: 560px;">
+        <div class="header">
+           <div class="signup">
+                <h1>Signup </h1>
+                <form action="signup.php" method="post">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="integer" name="MobileNo" placeholder="Mobile No." required>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Create Password" required>
+                    <input type="password" name="password" placeholder="Confirm Password" required>
+                    <button type="submit">Signup</button>
+                    <p>If account already exists! <a href="login.php">Login </a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p></p>
+      
+          </div>
+</body>
+</html>
+
